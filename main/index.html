@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizetési Előzmények</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <img src="logo_colors@2x-8.png" alt="Groupama" class="glogo">
+        <button><img src="logout.png" alt="logout" class="glogout">Kilépés</button>
+    </div>
+
+    <div id="main-container">
+        <div id="left-panel">
+            <h2>Folyamatos Díjfizetésű Ultra Prémium Életbiztosítás</h2>
+            <p><strong>Szerződő neve<br /></strong> Kovács István</p>
+            <p><strong>Szerződésszám<br /></strong> 87562443</p>
+            <p><strong>Utolsó befizetés<br /></strong> 2019. 06. 25.</p>
+            <p><strong>Biztosítási díj rendezve<br /></strong> 2019. 07. 01.</p>
+        </div>
+
+        <div id="content">
+            <h3>Fizetési Előzmények</h3>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>EPAYMT8...</span>
+                    <span>5 000 Ft</span>
+                    <button class="btn-toggle">&#9660;</button>
+                </div>
+                <div class="card-body details-hidden">
+                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
+                    <p><strong>Befizetés módja:</strong> Bankkártya</p>
+                    <p><strong>Státusz:</strong> Folyamatban</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>123456789</span>
+                    <span>5 000 Ft</span>
+                    <button class="btn-toggle">&#9660;</button>
+                </div>
+                <div class="card-body details-hidden">
+                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
+                    <p><strong>Befizetés módja:</strong> Átutalás</p>
+                    <p><strong>Státusz:</strong> Beérkezett</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
