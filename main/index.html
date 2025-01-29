@@ -25,34 +25,81 @@
         <div id="content">
             <h3>Fizetési Előzmények</h3>
 
-            <div class="card">
-                <div class="card-header">
-                    <span>EPAYMT8...</span>
-                    <span>5 000 Ft</span>
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-cell">EPAYMT8...</div>
+                    <div class="entry-cell">Bankkártya</div>
+                    <div class="entry-cell">2019. 06. 25.</div>
+                    <div class="entry-cell">5 000 Ft</div>
+                    <div class="entry-cell status status-blue">Folyamatban</div>
                     <button class="btn-toggle">&#9660;</button>
                 </div>
-                <div class="card-body details-hidden">
-                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
+                <div class="entry-body details-hidden">
                     <p><strong>Befizetés módja:</strong> Bankkártya</p>
+                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
                     <p><strong>Státusz:</strong> Folyamatban</p>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <span>123456789</span>
-                    <span>5 000 Ft</span>
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-cell">123456789</div>
+                    <div class="entry-cell">Átutalás</div>
+                    <div class="entry-cell">2019. 06. 25.</div>
+                    <div class="entry-cell">5 000 Ft</div>
+                    <div class="entry-cell status status-green">Beérkezett</div>
                     <button class="btn-toggle">&#9660;</button>
                 </div>
-                <div class="card-body details-hidden">
-                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
+                <div class="entry-body details-hidden">
                     <p><strong>Befizetés módja:</strong> Átutalás</p>
+                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
                     <p><strong>Státusz:</strong> Beérkezett</p>
                 </div>
             </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-cell">EPAYMT8...</div>
+                    <div class="entry-cell">Adójóváírás</div>
+                    <div class="entry-cell">2019. 02. 24.</div>
+                    <div class="entry-cell">15 000 Ft</div>
+                    <div class="entry-cell status status-green">Beérkezett</div>
+                    <button class="btn-toggle">&#9660;</button>
+                </div>
+                <div class="entry-body details-hidden">
+                    <p><strong>Befizetés módja:</strong> Adójóváírás</p>
+                    <p><strong>Dátum:</strong> 2019. 02. 24.</p>
+                    <p><strong>Státusz:</strong> Beérkezett</p>
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-cell">EPAYMT8...</div>
+                    <div class="entry-cell">Lehívás</div>
+                    <div class="entry-cell">2019. 02. 24.</div>
+                    <div class="entry-cell">15 000 Ft</div>
+                    <div class="entry-cell status status-red">Sikertelen</div>
+                    <button class="btn-toggle">&#9660;</button>
+                </div>
+                <div class="entry-body details-hidden">
+                    <p><strong>Befizetés módja:</strong> Lehívás</p>
+                    <p><strong>Dátum:</strong> 2019. 02. 24.</p>
+                    <p><strong>Státusz:</strong> Sikertelen</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.btn-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const entryBody = button.parentElement.nextElementSibling;
+                entryBody.classList.toggle('details-hidden');
+                entryBody.classList.toggle('details-visible');
+            });
+        });
+    </script>
 </body>
 </html>
