@@ -23,7 +23,18 @@
         </div>
 
         <div id="content">
-            <h3>Fizetési Előzmények</h3>
+            <div id="tabs">
+                <div class="tab">Fizetendő tételek</div>
+                <div class="tab">Eseti díj befizetése</div>
+                <div class="tab active">Fizetési előzmények</div>
+            </div>
+            <div class="table-header">
+                <div>Azonosító</div>
+                <div>Befizetés módja</div>
+                <div>Dátum</div>
+                <div>Összeg</div>
+                <div>Státusz</div>
+            </div>
 
             <div class="entry">
                 <div class="entry-header">
@@ -31,14 +42,20 @@
                     <div class="entry-cell">Bankkártya</div>
                     <div class="entry-cell">2019. 06. 25.</div>
                     <div class="entry-cell">5 000 Ft</div>
-                    <div class="entry-cell status status-blue">Folyamatban</div>
-                    <button class="btn-toggle">&#9660;</button>
+                    <div class="entry-cell"><span class="status status-blue">●</span> Folyamatban</div>
+                    <button class="btn-toggle"><img src="arrow.png"></button>
                 </div>
                 <div class="entry-body details-hidden">
-                    <p><strong>Befizetés módja:</strong> Bankkártya</p>
-                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
-                    <p><strong>Státusz:</strong> Folyamatban</p>
-                </div>
+                    <div class="detail-row">
+                        <span><strong>Biztosítási időszak:</strong><br />2019. 06. 02 - 07. 01.</span>
+                        <span><strong>Díjelőírás:</strong><br /> 5 000 Ft</span>
+                        <span><strong>Könyvelt díj:</strong><br /> 5 000 Ft</span>
+                    </div>
+                    <div class="attachment">
+                        <img src="pdf-icon.png" alt="PDF ikon">
+                        <a href="#">Fizetési nyugta letöltése</a>
+                    </div>
+                </div>  
             </div>
 
             <div class="entry">
@@ -47,47 +64,68 @@
                     <div class="entry-cell">Átutalás</div>
                     <div class="entry-cell">2019. 06. 25.</div>
                     <div class="entry-cell">5 000 Ft</div>
-                    <div class="entry-cell status status-green">Beérkezett</div>
-                    <button class="btn-toggle">&#9660;</button>
+                    <div class="entry-cell"><span class="status status-green">●</span> Beérkezett</div>
+                    
+                    <button class="btn-toggle"><img src="arrow.png"></button>
                 </div>
                 <div class="entry-body details-hidden">
-                    <p><strong>Befizetés módja:</strong> Átutalás</p>
-                    <p><strong>Dátum:</strong> 2019. 06. 25.</p>
-                    <p><strong>Státusz:</strong> Beérkezett</p>
-                </div>
+                    <div class="detail-row">
+                        <span><strong>Biztosítási időszak:</strong><br />2019. 06. 02 - 07. 01.</span>
+                        <span><strong>Díjelőírás:</strong><br /> 5 000 Ft</span>
+                        <span><strong>Könyvelt díj:</strong><br /> 5 000 Ft</span>
+                    </div>
+                    <div class="attachment">
+                        <img src="pdf-icon.png" alt="PDF ikon">
+                        <a href="#">Fizetési nyugta letöltése</a>
+                    </div>
+                </div>  
             </div>
 
             <div class="entry">
                 <div class="entry-header">
                     <div class="entry-cell">EPAYMT8...</div>
-                    <div class="entry-cell">Adójóváírás</div>
+                    <div class="entry-cell">Bankkártya</div>
                     <div class="entry-cell">2019. 02. 24.</div>
-                    <div class="entry-cell">15 000 Ft</div>
-                    <div class="entry-cell status status-green">Beérkezett</div>
-                    <button class="btn-toggle">&#9660;</button>
+                    <div class="entry-cell">5 000 Ft</div>
+                    <div class="entry-cell"><span class="status status-red">●</span> Sikertelen</div>
+                    <button class="btn-toggle"><img src="arrow.png"></button>
                 </div>
                 <div class="entry-body details-hidden">
-                    <p><strong>Befizetés módja:</strong> Adójóváírás</p>
-                    <p><strong>Dátum:</strong> 2019. 02. 24.</p>
-                    <p><strong>Státusz:</strong> Beérkezett</p>
-                </div>
+                    <div class="detail-row">
+                        <span><strong>Biztosítási időszak:</strong><br />2019. 06. 02 - 07. 01.</span>
+                        <span><strong>Díjelőírás:</strong><br /> 5 000 Ft</span>
+                        <span><strong>Könyvelt díj:</strong><br /> 5 000 Ft</span>
+                    </div>
+                    <div class="attachment">
+                        <img src="pdf-icon.png" alt="PDF ikon">
+                        <a href="#">Fizetési nyugta letöltése</a>
+                    </div>
+                </div>  
             </div>
 
             <div class="entry">
                 <div class="entry-header">
                     <div class="entry-cell">EPAYMT8...</div>
-                    <div class="entry-cell">Lehívás</div>
+                    <div class="entry-cell">Bankkártya</div>
                     <div class="entry-cell">2019. 02. 24.</div>
-                    <div class="entry-cell">15 000 Ft</div>
-                    <div class="entry-cell status status-red">Sikertelen</div>
-                    <button class="btn-toggle">&#9660;</button>
+                    <div class="entry-cell">5 000 Ft</div>
+                    <div class="entry-cell"><span class="status status-green">●</span> Beérkezett</div>
+                    <button class="btn-toggle"><img src="arrow.png"></button>
                 </div>
                 <div class="entry-body details-hidden">
-                    <p><strong>Befizetés módja:</strong> Lehívás</p>
-                    <p><strong>Dátum:</strong> 2019. 02. 24.</p>
-                    <p><strong>Státusz:</strong> Sikertelen</p>
-                </div>
+                    <div class="detail-row">
+                        <span><strong>Biztosítási időszak:</strong><br />2019. 06. 02 - 07. 01.</span>
+                        <span><strong>Díjelőírás:</strong><br /> 5 000 Ft</span>
+                        <span><strong>Könyvelt díj:</strong><br /> 5 000 Ft</span>
+                    </div>
+                    <div class="attachment">
+                        <img src="pdf-icon.png" alt="PDF ikon">
+                        <a href="#">Fizetési nyugta letöltése</a>
+                    </div>
+                </div>   
             </div>
+
+          
 
         </div>
     </div>

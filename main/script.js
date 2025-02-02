@@ -25,3 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelectorAll('.btn-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+        const entryBody = button.parentElement.nextElementSibling;
+        entryBody.classList.toggle('details-hidden');
+        entryBody.classList.toggle('details-visible');
+    });
+});
